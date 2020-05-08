@@ -127,7 +127,7 @@ def main(hostname):
     return right_username(results)
 
 def ssh_login_hack(hosts):
-	banner()
+    banner()
     ssh_login_hack_dict = {}
     for hostname in hosts:
         ssh_login_hack_dict[hostname] = main(hostname)
