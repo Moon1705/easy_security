@@ -22,6 +22,7 @@ domain = 'beltelecom.by'
 def print_json(json_list):
     print(f"{G}\nResult:")
     print(json.dumps(json_list, indent=4, sort_keys=True))
+    print(W)
 
 def write_final():
     write_dict = {ip:{"domain":domain_name_list.get(ip), "service":service_list.get(ip)} for ip in set(domain_name_list)}
