@@ -1,0 +1,6 @@
+paramiko==2.0.8
+subdomain
+dnspython
+requests
+queue
+tqdm
