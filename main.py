@@ -27,7 +27,7 @@ def write_final():
     write_dict = {ip:{"domain":domain_name_list.get(ip), "service":service_list.get(ip)} for ip in set(domain_name_list)}
     for ip in set(service_list):
         write_dict[ip]['service'][22] = {'username': ssh_login.get(ip)}
-    with open('result/intelligence.txt', 'w') as file:
+    with open('intelligence.txt', 'w') as file:
         json.dump(write_dict, file, indent=4, sort_keys=True)
 
 
